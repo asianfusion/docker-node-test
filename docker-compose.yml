@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    container_name: node-server-test
+    build: .
+    ports:
+      - '4567:4567'
+    # used to send environment variable to nodejs app
+    environment:
+      MESSAGE: sample message from environment
+      
+
+
+
